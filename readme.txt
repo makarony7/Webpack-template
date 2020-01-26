@@ -12,4 +12,12 @@ webpack:
         "dev": "webpack --mode=development",
         "build": "webpack --mode=production"
     },
-4. 
+4. added webpack.config.js file and paste into it:
+    const path = require('path');
+    module.exports = {
+    entry: './src/js/index.js',
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'bundle.js'
+        }
+    };
