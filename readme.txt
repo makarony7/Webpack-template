@@ -2,7 +2,7 @@ git add .
 git commit -am "..."
 git remote add origin git@github.com:makarony7/"name of repository".git
 git push -u origin master
-
+(cat ~/.ssh/id_rsa.pub)
 ----------------------------------------------
 
 Git import:
