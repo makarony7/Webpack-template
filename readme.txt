@@ -38,7 +38,7 @@ webpack:
         ]
     }
 
-    6. install npm install sass-loader node-sass style-loader css-loader  --save-dev (https://github.com/webpack-contrib/sass-loader)
+6. install npm install sass-loader node-sass style-loader css-loader  --save-dev (https://github.com/webpack-contrib/sass-loader)
     add: to webpack.config.js to rules
     {
         test: /\.s[ac]ss$/i,
@@ -52,7 +52,7 @@ webpack:
         ],
     },
 
-    7. install npm i --save-dev html-webpack-plugin (https://github.com/jantimon/html-webpack-plugin)
+7. install npm i --save-dev html-webpack-plugin (https://github.com/jantimon/html-webpack-plugin)
     add: to webpack.config.js to rules
     {
         test: /\.s[ac]ss$/i,
@@ -72,3 +72,10 @@ webpack:
             template: './src/index.html'
             })
         ]
+
+8. install npm install webpack-dev-server --save-dev (https://github.com/webpack/webpack-dev-server)
+    add: to webpack.config.json
+     "scripts": {
+        "dev": "webpack-dev-server --mode=development",
+        "build": "webpack --mode=production"
+    },
