@@ -37,3 +37,17 @@ webpack:
             }
         ]
     }
+
+    6. install npm install sass-loader node-sass style-loader css-loader  --save-dev (https://github.com/webpack-contrib/sass-loader)
+    add: to webpack.config.js to rules
+    {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          'style-loader',
+          // Translates CSS into CommonJS
+          'css-loader',
+          // Compiles Sass to CSS
+          'sass-loader',
+        ],
+    },

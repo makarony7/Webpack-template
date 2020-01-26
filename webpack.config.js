@@ -17,7 +17,18 @@ module.exports = {
             presets: ['@babel/preset-env']
           }
         }
-      }
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // 3. Creates `style` nodes from JS strings
+          'style-loader',
+          // 2. Translates CSS into CommonJS
+          'css-loader',
+          // 1. Compiles Sass to CSS
+          'sass-loader',
+        ],
+      },
     ]
   }
 };
