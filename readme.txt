@@ -51,3 +51,24 @@ webpack:
           'sass-loader',
         ],
     },
+
+    7. install npm i --save-dev html-webpack-plugin (https://github.com/jantimon/html-webpack-plugin)
+    add: to webpack.config.js to rules
+    {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          'style-loader',
+          // Translates CSS into CommonJS
+          'css-loader',
+          // Compiles Sass to CSS
+          'sass-loader',
+        ],
+    },
+    - const HtmlWebpackPlugin = require('html-webpack-plugin') on top
+    - and this:
+        plugins: [
+            new HtmlWebpackPlugin({
+            template: './src/index.html'
+            })
+        ]
